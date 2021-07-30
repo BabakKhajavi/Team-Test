@@ -1,0 +1,147 @@
+body {
+  background-color: white;
+}
+*{
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+label[class*="form-check-label"]{
+  margin-left: 6px;
+}
+ul{
+  margin: 10px;
+}
+ul >li{
+  display: inline;
+  padding: 5px;;
+}
+.form-group
+{
+  margin-bottom: 5px;
+}
+.active{
+  background-color: green;
+  padding: 5px;
+  border-radius: 5px;
+}
+.inactive{
+  background-color: transparent;
+}
+.form-group > label
+{
+  margin-left: 4px;
+  margin-bottom: 5px;
+}
+.position-right-button
+{
+  position: absolute;
+  right:10px;
+  bottom: 10px;
+}
+.position-right-top
+{
+  position: absolute;
+  right:10px;
+  top: 10px;
+}
+.paragraph_box{
+  
+  padding: 10px;
+  height: 60px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.shadow-box{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.adv-sticker{
+  position:fixed; 
+  left:0;
+  top:10%;
+  text-align: center;
+  min-width: 300px;
+  min-height: 400px;
+  background-color: green;
+}
+.adv-badge{
+  position:absolute; 
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 100px;
+  min-height: 100px;
+  background-color: red;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .check-screen{
+    background-color: red;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .check-screen{
+    background-color: orange;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .check-screen{
+    background-color: pink;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .check-screen{
+    background-color: blue;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .check-screen{
+    background-color: green;
+  }
+}
+@keyframes fade-out {
+  from {opacity: 0.1;}
+  to {opacity: 1;}
+}
+/* The element to apply the animation to */
+.fade-out-box {
+  width: 100px;height:100px;
+  opacity: 0.1;
+  background-color: red;
+}
+.fade-out-box:hover {
+  width: 100px;
+  height:100px;
+  animation-name: fade-out;
+  animation-duration: 2s;
+  animation-iteration-count:1;
+}
