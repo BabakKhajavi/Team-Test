@@ -12,6 +12,7 @@ const Detail = (props) => {
             const { data } = await axios.get(apiEndPoint, { 'Content-Type': 'application/json' });
             let selectedBusiness = data.find(item => item.id === parseInt(params.id));
             setSelectedBusiness(selectedBusiness);
+            console.log("Hi From [detail.jsx]");
         }
         fetch().catch(error => { console.log("Somthing went wrong on the server.") });
     }, [params.id]);
